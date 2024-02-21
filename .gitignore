@@ -6,7 +6,7 @@ vendor/
 .env
 .env.local
 
-# Build outputs
+# Build outputs | fichier générer automatiquement
 /dist/
 /build/
 

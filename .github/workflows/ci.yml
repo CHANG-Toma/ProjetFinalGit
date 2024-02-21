@@ -20,11 +20,11 @@ jobs:
       - name: Clean npm cache #nettoyage du cache
         run: npm cache clean --force
 
-      - name: Install Dependencies  #Install les dépendances (comme eslint)
+      - name: Install Dependencies  #Install les dépendances (pour eslint)
         run: npm install
 
-      - name: Change permissions  #Ajout de permission d'exécution
+      - name: Change permissions  #Ajout de permission d'exécution sur eslint
         run: chmod +x ./node_modules/.bin/eslint
 
-      - name: Run ESLint
+      - name: Run ESLint  #exécution d'eslint
         run: ./node_modules/.bin/eslint .
